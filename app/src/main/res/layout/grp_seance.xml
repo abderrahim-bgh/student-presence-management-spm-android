@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/year_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="29dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/grp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="#91AEC4"
+            app:cardCornerRadius="17dp"
+            app:cardElevation="4dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/group_name_text"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Group 01"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    android:textSize="15sp"
+
+                    />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/edit_c"
+                    android:src="@drawable/edit" />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/del_g"
+                    android:src="@drawable/delete"
+                    android:layout_marginRight="15dp"
+                    />
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/export"
+                    android:src="@drawable/exel"
+                    android:layout_marginRight="15dp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:id="@+id/expnded_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/b"
+            android:layout_marginVertical="5dp"
+            >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="#253e64"
+                />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/year_text"
+                android:layout_marginVertical="5dp"
+                >
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lite_grp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="39dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardBackgroundColor="#91AEC4"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    android:layout_below="@+id/expnded_classes"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="the group list"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/seance"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginHorizontal="39dp"
+                    android:layout_marginVertical="6dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardBackgroundColor="#91AEC4"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp"
+                    android:layout_below="@+id/expnded_classes"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="seance"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:textSize="20sp"
+                        />
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="8dp"
+            >
+
+            <TextView
+                android:id="@+id/txt_b"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:text="Add Student"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <EditText
+                    android:id="@+id/student_mat_e_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="student matrecule"
+                    android:backgroundTint="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginVertical="5dp"
+                    />
+                <EditText
+                    android:id="@+id/student_familyNAme_e_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="student family name"
+                    android:backgroundTint="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginVertical="5dp"
+                    />
+                <EditText
+                    android:id="@+id/student_name_e_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:hint="student Name"
+                    android:backgroundTint="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginVertical="5dp"
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cncl_btn_addstudent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:text="Cancel"
+                    android:textColor="#fff"
+                    android:layout_marginHorizontal="25dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_btn_addstudent_dialog"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_btn"
+                    android:textColor="#fff"
+                    android:text="Add"
+                    android:layout_marginHorizontal="35dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

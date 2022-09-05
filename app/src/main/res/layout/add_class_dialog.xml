@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txt_b"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:text="Add class"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <EditText
+                    android:id="@+id/edit_text_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="ClassName"
+                    android:backgroundTint="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginVertical="5dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/nmbr_td_TP_pick"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+
+
+                    <CheckBox
+                        android:id="@+id/td_Check"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="TD"
+                        android:textSize="16sp"
+                        android:buttonTint="#91AEC4"
+
+                        />
+
+                    <NumberPicker
+                        android:id="@+id/nmbr_TD_pick"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+
+                        />
+
+
+
+
+
+
+                    <CheckBox
+                        android:id="@+id/tp_Check"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:text="TP"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:buttonTint="#91AEC4"
+
+                        />
+
+                    <NumberPicker
+                        android:id="@+id/nmbr_TP_pick"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        />
+
+
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/onlyOneGroup_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text=" Just one group"
+                    android:textSize="16sp"
+                    android:buttonTint="#91AEC4"
+                    android:layout_marginHorizontal="5dp"
+
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="60dp"
+                        android:layout_marginVertical="5dp"
+                        android:id="@+id/td"
+                        android:layout_height="60dp"
+                        android:text="TD"
+                        android:layout_marginRight="20dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:background="@drawable/background_btn"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/tp"
+                        android:layout_marginVertical="5dp"
+                        android:text="TP"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:background="@drawable/background_btn"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/L1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cncl_btn_addClass"
+                    android:layout_width="0dp"
+                    android:textColor="#fff"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:background="@drawable/background_btn"
+                    android:layout_marginHorizontal="25dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_btn_addClass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+                    android:text="Add"
+                    android:background="@drawable/background_btn"
+                    android:layout_marginHorizontal="35dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

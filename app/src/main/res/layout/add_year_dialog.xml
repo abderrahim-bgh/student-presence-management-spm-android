@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txt_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="25dp"
+                android:text="Add year"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/nmbr_pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_a"
+                android:layout_marginHorizontal="5dp"
+                android:orientation="horizontal">
+
+                <NumberPicker
+                    android:id="@+id/start_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2" />
+
+                <TextView
+                    android:id="@+id/slash"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="/"
+                    android:textAlignment="center"
+                    android:textSize="25dp" />
+
+                <NumberPicker
+                    android:id="@+id/end_year"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nmbr_pick"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cncl_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textColor="#fff"
+                    android:background="@drawable/background_btn"
+                    android:layout_marginHorizontal="25dp"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:text="Add"
+                    android:background="@drawable/background_btn"
+                    android:layout_marginHorizontal="35dp"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

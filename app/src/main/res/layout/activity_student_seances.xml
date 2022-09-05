@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSeancesActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/s_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#91AEC4"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Add "
+        app:titleTextColor="@color/black"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/students_seance_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginVertical="8dp"
+        android:layout_below="@+id/s_toolbar"
+
+        />
+
+
+
+
+</RelativeLayout>

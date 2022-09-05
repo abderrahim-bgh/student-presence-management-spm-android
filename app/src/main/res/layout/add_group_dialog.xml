@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/txt_b"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:text="Add Group"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:id="@+id/L1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginHorizontal="5dp"
+                >
+
+                <EditText
+                    android:id="@+id/edit_text_add_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:hint="ClassName"
+                    android:backgroundTint="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginVertical="5dp"
+                    />
+
+
+                <RadioGroup
+                    android:id="@+id/radio_group_td_tp_addgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+
+                    >
+                    <RadioButton
+                        android:id="@+id/td_radio_btn_addgroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TD"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/selector_radio"
+                        android:textColor="@drawable/radio_text"
+                        android:elevation="4dp"
+                        android:textAlignment="center"
+                        android:layout_margin="10dp"
+                        />
+                    <RadioButton
+                        android:id="@+id/tp_radio_btn_addgroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TP"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/selector_radio"
+                        android:textColor="@drawable/radio_text"
+                        android:elevation="4dp"
+                        android:layout_margin="10dp"
+                        android:textAlignment="center"
+                        />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="15dp"
+                >
+                <Button
+                    android:id="@+id/cncl_btn_addGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginHorizontal="25dp"
+                    />
+                <Button
+                    android:id="@+id/add_btn_addgroup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Add"
+                    android:backgroundTint="@color/blue"
+                    android:layout_marginHorizontal="35dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

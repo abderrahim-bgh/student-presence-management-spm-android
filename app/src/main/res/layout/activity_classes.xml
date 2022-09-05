@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".classesActivity"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/classes_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="72dp"
+        android:background="#194569"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Classes"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classes_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="true"
+        android:layout_marginTop="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+
+        />
+
+
+</LinearLayout>

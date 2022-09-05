@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_close_24"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:id="@+id/attendance_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                android:text="Add Group"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                android:textSize="24sp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="1"
+              android:orientation="horizontal"
+              >
+              <TextView
+                  android:id="@+id/exclue_txt"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginTop="4dp"
+                  android:text="Add Group"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="5dp"
+                  android:gravity="center"
+                  android:textSize="19sp" />
+              <TextView
+                  android:id="@+id/justified_absence_txt"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:layout_marginTop="4dp"
+                  android:text="Add Group"
+                  android:textColor="@color/black"
+                  android:layout_marginBottom="5dp"
+                  android:gravity="center"
+                  android:textSize="19sp" />
+
+          </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="5dp"
+
+                >
+                <Button
+                    android:id="@+id/attendance_dialogu_absent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Absent"
+                    android:backgroundTint="#BF203F"
+                    android:layout_marginHorizontal="25dp"
+                    />
+                <Button
+                    android:id="@+id/attendance_dialog_present"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="present"
+                    android:backgroundTint="#15A699"
+                    android:layout_marginHorizontal="35dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="exports the presence state"
+        android:gravity="center_horizontal"
+        android:textSize="28dp"
+        android:textColor="#3F51B5"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/im_ex"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <RadioButton
+                android:id="@+id/expo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Export"
+                android:shadowColor="@color/black"
+                android:textSize="18dp"
+                />
+
+            <RadioButton
+                android:id="@+id/impo"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Import "
+                android:shadowColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+ <RadioGroup
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/nb_seance"
+     android:orientation="horizontal"
+     android:gravity="center_horizontal">
+     <RadioButton
+         android:id="@+id/s4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="monthly"
+         android:shadowColor="@color/black"
+         android:textSize="18dp"
+         />
+
+     <RadioButton
+         android:id="@+id/s_all"
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text=" global "
+         android:shadowColor="@color/black"
+         android:textSize="18dp"
+         android:layout_marginLeft="5dp"
+         />
+
+ </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"></LinearLayout>
+
+        <EditText
+            android:id="@+id/seance1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="first sean"
+            android:backgroundTint="@color/black"
+            android:textSize="15dp"
+            android:layout_marginVertical="5dp"
+            />
+        <EditText
+            android:id="@+id/seanceend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:hint="last sean"
+            android:backgroundTint="@color/black"
+            android:textSize="15dp"
+            android:layout_marginVertical="5dp"
+            />
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"></LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabStu"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@drawable/backgroundview"
+                android:layout_height="match_parent"
+                android:text="Id"
+                android:gravity="center"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/backgroundview"
+
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="pren"
+                android:background="@drawable/backgroundview"
+
+                android:gravity="center"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:background="@drawable/backgroundview"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Nom"
+                android:gravity="center"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="etat"
+                android:background="@drawable/backgroundview"
+                android:gravity="center_horizontal"
+                android:textSize="19dp"
+                android:textColor="#000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ab"
+                        android:background="@drawable/backgroundview"
+
+                        android:gravity="center"
+                        android:textSize="19dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pr"
+                        android:background="@drawable/backgroundview"
+                        android:gravity="center"
+                        android:textSize="19dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ju"
+                        android:background="@drawable/backgroundview"
+                        android:gravity="center"
+                        android:textSize="19dp"
+                        android:textColor="#000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/export_recy"/>
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/export_recy4"/>
+         </LinearLayout>
+     </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="7dp"
+        android:gravity="center_horizontal"
+        >
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/canelex"
+            android:text="cancel"
+            android:textColor="#fff"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/background_btn"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/explor"
+            android:textColor="#fff"
+            android:text="export"
+            android:background="@drawable/background_btn"/>
+    </LinearLayout>
+
+</LinearLayout>

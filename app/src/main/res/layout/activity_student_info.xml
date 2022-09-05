@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAEAEA"
+    tools:context=".StudentInfoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/student_info_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginStart="15dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/student_family_name"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="Family Name :"
+                            android:textColor="@color/black"
+                            android:layout_gravity="start"
+                            android:textSize="17sp" />
+                        <ImageView
+                            android:id="@+id/student_info_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@drawable/edite_state" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/student_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Name :"
+                        android:textColor="@color/black"
+                        android:layout_gravity="start"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/student_matrecule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginStart="15dp"
+                        android:text=" ID :"
+                        android:textColor="@color/black"
+                        android:layout_gravity="start"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/student_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginStart="15dp"
+                        android:text="Class :"
+                        android:textColor="@color/black"
+                        android:layout_gravity="start"
+                        android:textSize="17sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginStart="15dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/student_groupTD"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Group TD :"
+                            android:textColor="@color/black"
+                            android:layout_gravity="start"
+                            android:layout_marginEnd="12dp"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/student_groupTp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text=" GRoup TP :"
+                            android:textColor="@color/black"
+                            android:layout_gravity="start"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp"
+                    android:orientation="horizontal"
+                    >
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/td_card_view"
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginHorizontal="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <TextView
+                                android:id="@+id/student_groupTd_incard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:text=" Group Td :"
+                                android:textColor="@color/black"
+                                android:layout_gravity="start"
+                                android:textSize="14sp" />
+
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/piechart_td"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_below="@+id/student_groupTd_incard"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginHorizontal="22dp"
+                                android:layout_marginVertical="18dp" />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/tp_card_view"
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="8dp"
+                        android:layout_marginVertical="8dp"
+                        android:layout_marginHorizontal="8dp"
+                        >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+
+                            <TextView
+                                android:id="@+id/student_groupTp_incard"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="start"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="15dp"
+                                android:text=" Group Td :"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/piechart_tp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:layout_below="@+id/student_groupTp_incard"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginHorizontal="22dp"
+                                android:layout_marginVertical="18dp"
+
+                                />
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/comments_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp"
+                >
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:orientation="vertical"
+                 >
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="15dp"
+                     android:text=" Comment:"
+                     android:textColor="@color/black"
+                     android:layout_gravity="start"
+                     android:textSize="14sp"
+
+                     />
+                 <TextView
+                     android:id="@+id/student_com"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentTop="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginBottom="20dp"                     android:layout_marginTop="15dp"
+
+                     android:text=" Comments:"
+                     android:textColor="@color/black"
+                     android:layout_gravity="start"
+                     android:textSize="14sp"
+
+                     />
+
+
+             </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>

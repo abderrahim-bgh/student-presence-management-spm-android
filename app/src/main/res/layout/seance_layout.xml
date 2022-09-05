@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="#EAEAEA"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<LinearLayout
+    android:id="@+id/lay_1"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+
+                android:src="@drawable/t_start"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+
+
+            <TextView
+                android:id="@+id/h_start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="17dp"
+                android:text="h_start"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/t_end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+            <TextView
+                android:id="@+id/h_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:textSize="17dp"
+                android:text="h_end"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/name_ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000"
+                android:gravity="center_horizontal"
+                android:textSize="28dp"
+                android:text=" name_seance"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/date_ss"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000"
+                android:layout_marginLeft="20dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+                android:id="@+id/coment_s"
+                android:layout_gravity="right"
+                android:layout_width="30dp"
+                android:layout_height="26dp"
+                android:src="@drawable/comment_24"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/presence_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+          <ProgressBar
+              android:id="@+id/seance_progress_bar"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="3"
+              style="?android:progressBarStyleHorizontal"
+              android:layout_marginHorizontal="5dp"
+              android:layout_marginVertical="4dp"
+              android:progress="75"
+              android:progressTint="@color/black"
+              />
+          <TextView
+              android:id="@+id/seance_presence"
+              android:layout_marginRight="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="21 present out of 24"
+              android:layout_marginLeft="20dp"
+              />
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
